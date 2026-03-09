@@ -1,9 +1,4 @@
+import pandas as pd
 
-
-st.subheader(f"Prediction:'{int(prediction)}'")
-
-if prediction ==1:
-    st.error("This Transaction can be Fraud ")
-
-
-else :
+df = pd.read_csv("AIML_Dataset.csv")
+print(df.columns)
